@@ -66,3 +66,4 @@ FROM students_details;
 SELECT concat (Name ," is ",Age," years old " ) AS student
 FROM students_details
 
+

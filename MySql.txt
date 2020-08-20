@@ -1,0 +1,68 @@
+
+creat <name>;
+Dropo<name>;
+Show<name>;
+
+Insert value
+
+Insert Into 
+values
+('name',int,.....);
+
+select name,id
+From Table name;
+
+Distinct use for paticular search
+
+SELECT DISTINCT City
+FROM students_details;
+
+Limit 
+
+SELECT *
+FROM students_details
+LIMIT 5;
+
+SELECT  City
+FROM `students_details`
+WHERE Gender='Female';
+
+SELECT *
+FROM `students_details`  
+WHERE Age <=25;
+
+
+SELECT Name ,Roll,GPA
+FROM `students_details`
+WHERE Roll BETWEEN 103 AND 105;
+
+
+SELECT * 
+FROM `students_details`
+WHERE City ='Dhaka' 
+AND
+( Gender = 'Male' OR GPA >=3.0);
+
+UPDATE <Table name>
+SET Id =<Change item>
+WHERE Name = "Elias";
+
+UPDATE teacher
+SET Salary = Salary+5000
+WHERE Salary >40000;
+
+DELETE FROM teacher
+WHERE Id =30;
+
+Function declare
+
+SELECT lower('name is nazmuL');
+
+SELECT upper(city)
+FROM students_details;
+
+
+
+SELECT concat (Name ," is ",Age," years old " ) AS student
+FROM students_details
+

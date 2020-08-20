@@ -66,4 +66,17 @@ FROM students_details;
 SELECT concat (Name ," is ",Age," years old " ) AS student
 FROM students_details
 
+DESCRIBE students_details;
+
+SELECT SUM(Salary),AVG(Salary)
+FROM teacher;
+
+SELECT COUNT( * ),
+MAX(Salary),MIN(Salary),AVG(Salary)
+FROM teacher;
+
+SELECT Roll,Name,Age
+MIN(GPA) 
+FROM students_details
+WHERE Gender ='Female'
 

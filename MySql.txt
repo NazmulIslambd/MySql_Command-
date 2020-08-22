@@ -80,3 +80,43 @@ MIN(GPA)
 FROM students_details
 WHERE Gender ='Female'
 
+Alter 
+
+ALTER TABLE teacher
+ADD Age int(5);
+
+ALTER TABLE teacher
+CHANGE <old name><new name>varchar(15);
+
+ALTER TABLE teacher
+DROP COLUMN Age;
+
+Group Use
+
+SELECT Depatment,SUM(Salary)
+FROM teacher
+GROUP by Depatment
+ORDER By SUM(Salary) DESC;
+
+Truncat
+
+TRUNCATE TABLE teacher;
+
+Join
+
+SELECT std.Roll,reg_num, Name,Gender,Department,GPA
+FROM students_details as std ,exam_result as exam
+WHERE std.Roll = exam.Roll;
+
+SELECT std.Roll,reg_num, Name,Gender,Department,GPA
+FROM students_details as std join exam_result as exam
+ON std.Roll = exam.Roll;
+
+View
+
+CREATE view student AS
+SELECT Roll,Name,Gender
+FROM students_details;
+
+SELECT * FROM student;
+
